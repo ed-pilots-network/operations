@@ -2,6 +2,9 @@
 
 The implementation (for now) is in docker-compose, but deliberately is not shared in the public repository. See `/opt/nexus` on Morris and edit things with care. In future the implementation will be shared - if nothing else for redundancy reasons.
 
+## Ops note
+If it's down: `cd /opt/nexus && sudo docker compose up -d certbot nexus`
+
 ## Ingress
 In order to balance the multiple roles of the Nexus instance and not require developers to remember port numbers etc, Nginx Ingress is provided. As the project moves forwards, this will likely need to relocate from being a specific Nginx ingress for Nexus, to a wider path based routing system. But YAGNI for now.
 
@@ -52,10 +55,9 @@ Developers are welcome to have upload capability. The current instance supports 
 Artifact overwrites are allowed. Be careful when pushing.
 
 ### Misc Developer notes
-1. Remember, self signed-certificate. Tell Docker to trust insecure certificates (or install the certificate locally) if you want to login.
-2. `docker login https://nexus.edpn.io` - give it your Nexus credentials (speak to Ops if you need credentials).
-3. `docker tag <ref> nexus.edpn.io/<image_path>` - the subdomain can change in future per request. 
-4. Prefer GA Workflows over manual pushing, but don't use the build server to build for local tests.
+1. `docker login https://nexus.edpn.io` - give it your Nexus credentials (speak to Ops if you need credentials).
+2. `docker tag <ref> nexus.edpn.io/<image_path>` - the subdomain can change in future per request. 
+3. Prefer GA Workflows over manual pushing, but don't use the build server to build for local tests.
 
 ### Maven Developer notes
 Suggested settings.xml:
