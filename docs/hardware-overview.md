@@ -22,3 +22,5 @@ This page describes what hardware is made available to the project.
 | CascadianX#3985 | ? | Portland, OR, USA | 2x Intel Xeon Gold 6162 (24C/48T) @ 1.90GHz | 384GB DDR4 | 11.5TB SSD | ? | Yes | On a business line with dedicated IPs |
 | CascadianX#3985 | ? | Portland, OR, USA | 2x Intel Xeon Gold 6162 (24C/48T) @ 1.90GHz | 384GB DDR4 | 11.5TB SSD | ? | Yes | On a business line with dedicated IPs |
 | CascadianX#3985 | ? | Portland, OR, USA | 2x Intel Xeon Gold 6162 (24C/48T) @ 1.90GHz | 384GB DDR4 | 11.5TB SSD | ? | Yes | On a business line with dedicated IPs |
+| | | | | | | | |
+| trav#2709 | R730 | Kalamazoo, MI, USA | 2x Intel Xeon 8C/16T @ 3.20GHz | 128GB DDR4 | SSD | Dual/Redundant - 3hr UPS | Yes | On a business line with dedicated IP |
